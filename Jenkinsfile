@@ -1,8 +1,8 @@
 node{
     stage('SCM Checkout'){
-        git 'https://github.com/ghazianibros/helloworld-maven.git'
+        git 'https://github.com/ghazianibros/JUnitProject.git'
     }
     stage('Compile-Package'){
-        sh 'mvn clean package'
+        sh 'mvn test'
     }
 }
